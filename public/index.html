@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>DG Tech | Assistente Virtual</title>
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <main class="chat">
+    <header class="chat-header">
+      <div class="avatar">DG</div>
+
+      <div class="header-info">
+        <h1>DG Tech</h1>
+        <p>Assistente virtual • Demonstração</p>
+      </div>
+
+      <span class="status" title="Demonstração online"></span>
+    </header>
+
+    <!-- Área onde aparecem as mensagens -->
+    <section
+      id="messages"
+      class="messages"
+      aria-label="Histórico da conversa"
+      aria-live="polite"
+    ></section>
+
+    <!-- Opções rápidas para testar o chatbot -->
+    <nav class="quick-options" aria-label="Opções rápidas">
+      <button type="button" data-message="1">Suporte</button>
+      <button type="button" data-message="2">Consultoria</button>
+      <button type="button" data-message="3">Sistemas</button>
+      <button type="button" data-message="4">Atendente</button>
+    </nav>
+
+    <!-- Formulário para enviar mensagens -->
+    <form id="chat-form" class="chat-form">
+      <input
+        id="message-input"
+        type="text"
+        placeholder="Digite sua mensagem..."
+        maxlength="1000"
+        autocomplete="off"
+        aria-label="Sua mensagem"
+        required
+      >
+
+      <button id="send-button" type="submit">
+        Enviar
+      </button>
+    </form>
+  </main>
+
+</body>
+</html>
